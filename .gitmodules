@@ -1,0 +1,3 @@
+[submodule ".claude/_core"]
+	path = .claude/_core
+	url = https://github.com/Prolegomena-yume/harness-core.git

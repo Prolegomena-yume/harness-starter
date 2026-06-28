@@ -1,0 +1,44 @@
+{
+  "$schema": "./.claude/_core/schema/harness.schema.json",
+  "project": {
+    "name": "your-project-name",
+    "displayName": "Your Project"
+  },
+  "linear": {
+    "teamName": "YourTeam",
+    "tokenSource": {
+      "envVar": "LINEAR_TOKEN",
+      "fileFallback": ".claude/.linear-token"
+    },
+    "issueStates": ["backlog", "unstarted", "started"],
+    "limit": 30
+  },
+  "sessions": {
+    "dir": "docs/_sessions",
+    "dailySummaryFilename": "daily_summary.md"
+  },
+  "mirror": {
+    "enabled": false
+  },
+  "canonical": {
+    "links": [
+      { "label": "CLAUDE.md", "path": "CLAUDE.md" }
+    ]
+  },
+  "cloud": {
+    "aptPackages": ["build-essential"],
+    "nodeMinVersion": 20,
+    "requiredEnvVars": [],
+    "optionalEnvVars": [],
+    "npmGlobalPackages": [],
+    "codex": {
+      "enabled": false,
+      "authEnvVar": "CODEX_AUTH_JSON",
+      "workspaceWrite": true,
+      "trustRepo": true
+    }
+  },
+  "install": {
+    "buildTargets": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.claude.com/schemas/claude-code/settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/_core/hooks/session-init.sh\"",
+            "timeout": 20
+          },
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/_core/hooks/session-install.sh\"",
+            "timeout": 180
+          }
+        ]
+      }
+    ]
+  }
+}
