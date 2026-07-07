@@ -22,7 +22,11 @@
   },
   "canonical": {
     "links": [
-      { "label": "CLAUDE.md", "path": "CLAUDE.md" }
+      { "label": "CLAUDE.md", "path": "CLAUDE.md" },
+      {
+        "label": "Harness Constitution",
+        "path": ".claude/_core/docs/harness_constitution.md"
+      }
     ]
   },
   "cloud": {
